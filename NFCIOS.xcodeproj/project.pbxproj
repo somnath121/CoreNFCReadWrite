@@ -24,6 +24,7 @@
 		5499E050233B4C0E00316B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5499E053233B4C0E00316B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5499E055233B4C0E00316B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5499E05B233B4C6200316B7D /* NFCIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCIOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		5499E046233B4C0B00316B7D /* NFCIOS */ = {
 			isa = PBXGroup;
 			children = (
+				5499E05B233B4C6200316B7D /* NFCIOS.entitlements */,
 				5499E047233B4C0B00316B7D /* AppDelegate.swift */,
 				5499E049233B4C0B00316B7D /* SceneDelegate.swift */,
 				5499E04B233B4C0B00316B7D /* ViewController.swift */,
@@ -284,15 +286,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = NFCIOS/NFCIOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sita Chutiphaworakarn (92PWC36EPA)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2Z4HJ93Q64;
 				INFOPLIST_FILE = NFCIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somnath.NFCIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bchugroup.rfid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "RFID Reader Development Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +307,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = NFCIOS/NFCIOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sita Chutiphaworakarn (92PWC36EPA)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2Z4HJ93Q64;
 				INFOPLIST_FILE = NFCIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somnath.NFCIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bchugroup.rfid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "RFID Reader Development Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
